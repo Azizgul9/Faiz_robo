@@ -7,6 +7,7 @@ window.addEventListener("load", function () {
     setTimeout(() => {
       loadingScreen.style.display = "none"; // Hide loading screen
       mainContent.style.display = "block"; // Show main content
-    }, 5000); // 5000ms = 5 seconds
+      document.body.style.overflow = "auto";
+    }, 3000); // 3000ms = 5 seconds
   });
   
