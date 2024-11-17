@@ -1,5 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* Optional background color */
+    z-index: 1000;
+}
+
+#loading-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the whole screen */
+}
+
+#main-content {
+    display: none;
+    animation: fade-in 6s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling during loading */
+}
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    /* Optional background color */
+    z-index: 1000;
+}
+
+#loading-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Cover the whole screen */
+}
+
+#main-content {
+    display: none;
+    animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
 /* General Reset */
 * {
     margin: 0;
